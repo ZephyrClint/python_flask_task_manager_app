@@ -13,3 +13,7 @@ from wtforms.validators import DataRequired
 class AddTaskForm(FlaskForm):
     title = StringField('Input Title', validators=[DataRequired()])
     submit = SubmitField('Submit')
+
+class deleteTaskForm(FlaskForm):
+    submit = SubmitField('Delete')
+    
